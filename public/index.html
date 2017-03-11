@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Events In Malmö</title>
     <meta name="description" content="Design, development & personal development events in Malmö.">
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/d75bfad4-909a-4759-987e-74a102f28057.css"/>
     <link rel="stylesheet" href="dist/css/main.css">
 
      <!--[if lt IE 9]>
@@ -13,7 +14,83 @@
  </head>
 
  <body>
-   
+   <header class="site-header" role="banner" aria-label="header">
+     <h1 class="logo">Events in Malmö</h1>
+   </header>
+
+   <section class="events-listing" role="main" aria-label="primary">
+     <div>
+       <h2 class="spec-title">Upcoming events</h2>
+     </div>
+
+     <article="event">
+       <time datetime="2017-02-12 17:30">12/2 <span>17:30</span></time>
+       <adress>Foo cafe</adress>
+
+       <figure class="event__image">
+         <img src="/" alt="foo-cafe">
+         <figcaption class="event__image__tags">
+           <ul>
+             <li>communicating</li>
+             <li>leadership</li>
+             <li>people</li>
+             <li>presenting</li>
+             <li>speaking</li>
+           </ul>
+       </figure>
+
+       <div class="event__text">
+         <h1>Advanced Speakers Club</h1>
+         <p>This event is for members of Toastmasters International in the Skåne region. We shall gather here to practice speeches from the Toastmasters' Advanced Speeches manuals, try our workshop materials, keynote speeches, etc. Members who have achieved their Competent Communicator award shall be able to participate. Guests are welcome… </p>
+         <a href="#" class="btn" aria-label="Read more about Advanced Speakers Club link" title="Read more about Advanced Speakers Club">Read more</a>
+       </div>
+     </article>
+
+     <article="event">
+       <time>12/2 <span>17:30</span></time>
+       <adress>Foo cafe</adress>
+
+       <figure class="event__image">
+         <img src="/" alt="foo-cafe">
+         <figcaption class="event__image__tags">
+           <ul>
+             <li>communicating</li>
+             <li>leadership</li>
+             <li>people</li>
+             <li>presenting</li>
+             <li>speaking</li>
+           </ul>
+       </figure>
+
+       <div class="event-text">
+         <h1>Advanced Speakers Club</h1>
+         <p>This event is for members of Toastmasters International in the Skåne region. We shall gather here to practice speeches from the Toastmasters' Advanced Speeches manuals, try our workshop materials, keynote speeches, etc. Members who have achieved their Competent Communicator award shall be able to participate. Guests are welcome… </p>
+         <a href="#" class="btn" title="Advanced Speakers Club link">Read more</a>
+       </div>
+     </article>
+
+     <button aria-label="Load more events" class="btn-black">
+       Load more events
+     </button>
+   </section>
+
+   <section class="slack" role="complementary" aria-label="slack info">
+     <article class="slack__information">
+       <h2>Get notified about events</h2>
+       <p>Have your team notified about cool events that is taking place in Malmö directly in to your Slack.</p>
+       <a href="#" class="btn-blue btn-blue--slack">Add to slack</a>
+     </article>
+   </section>
+
+   <section class="about" role="complementary" aria-label="about">
+     <h1>What is this?</h2>
+     <p>Lorem ipsum dolor sit amet, ad ipsum melius sensibus vix, ut his tation luptatum conclusionemque, id quod tincidunt scriptorem nam. Wisi tamquam ea has. Pri ad copiosae assentior. Vis audiam eleifend intellegebat te, erant discere ei mel. Quem putent honestatis nec ea, eos minim mandamus in, sea ne oblique menandri. Vim an magna civibus periculis. <br />
+       Lorem ipsum dolor sit amet, ad ipsum melius sensibus vix, ut his tation luptatum conclusionemque, id quod tincidunt scriptorem nam. Wisi tamquam ea has. Pri ad copiosae assentior. Vis audiam eleifend intellegebat te, erant discere ei mel. Quem putent honestatis nec ea, eos minim mandamus in, sea ne oblique menandri. Vim an magna civibus periculis.</p>
+   </section>
+
+   <footer class="page-footer" role="contentinfo" aria-label="page footer">
+     <h2 class="block-text">Get out and enjoy!</h2>
+   </footer>
  </body>
 
  </html>
