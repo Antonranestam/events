@@ -1,61 +1,32 @@
 // Our grid variables
-$column: golden-ratio(20px, 3);
-$gutter: golden-ratio(20px, 1);
 $max-width: 1180px;
 
 // Base font-size and line-height
 $base-font-size: 1.6;
 $base-line-height: 1.5;
 
-// Visual grid that can be used if neat helpers is activated
-// $visual-grid : true;
-// $visual-grid-color: #e0eef7;
-
 // Colors
 $white: #fff;
-$white-opac: rgba(255, 255, 255, .2);
+$yellow: #ffeb2b;
+$dark-yellow: #e7d425;
+$black: #1c201f;
+$semi-black: #2d2f20;
+$grey: #d9d9d9;
+$blue: #161b76;
 $black-opac: rgba(0, 0, 0, 0);
-$black: rgba(0, 0, 0, 1);
-$light-grey: #ccc;
-$grey-pink: #f3eaf4;
-$black-three: rgba(0, 0, 0, .3);
-$lighter-grey: #e7eaef;
-$case-grey: #f6fcff;
-$dark-pink: #140a10;
-
-$black-three: rgba(53, 23, 48, .3);
-$black-four: rgba(0, 0, 0, .08);
-
-// menu colors
-$menu-one: #ff85b5;
-$menu-two: #fdf28e;
-
-$menu-three: #86c5fc;
-$menu-four: #e8c3fd;
-
-$menu-five: #9abdeb;
-$menu-six: #80f9b7;
-
-$text: #2a283a;
-$grey: #888;
-
-// Color gradients
-$pink: #f095ff;
-$pinkred: #f55260;
 
 // Typography
-$avenir-ob:'Avenir LT W01_55 Obliqu1475526';
-$avenir-black:'Avenir LT W01_95 Black1475556';
-$avenir-book: 'Avenir LT W01_45 Book1475508';
-$avenir-medium: 'AvenirNextLTW01-Medium';
-$avenir-light: 'Avenir LT W01_35 Light1475496';
+$acrom: 'Acrom W00 ExtraBold';
+$courier: 'Courier PS W01';
+$courier-italic: 'Courier PS W01 Italic';
+$courier-bold: 'Courier PS W01 Bold';
 
 // Font sizes
-$heading-one-big: 26;
-$heading-one-medium: 15;
-$heading-one: 10rem;
-$heading-one-medium: 7.5rem;
-$heading-one-small: 4rem;
+$heading-one: 12.6;
+$heading-two: 6.6;
+$heading-three: 3.6;
+$heading-four: 2.4;
+$heading-one-medium: 8.6;
 
 // Breakpoints
 $breakpoint-small: 650px;
