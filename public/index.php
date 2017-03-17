@@ -18,7 +18,7 @@
 <?php
 
 require_once 'src/Feed.php';
-$rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=7cdd9e10a17509da5fda8b1f6a706e03');
+$rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4dde228bd1c83939a0fb42');
 
 ?>
 
@@ -79,7 +79,7 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=7cdd9e10a175
   					<div class="event__text">
               <h1>
                 <a href="<?php echo htmlSpecialChars($item->link) ?>"><?php echo htmlSpecialChars($item->title) ?></a>
-                <small><?php echo ($item->pubDate) ?></small>
+                <small><?php echo ($item->author) ?></small>
               </h1>
 
   						<p><?php echo strip_tags ($item->description, '<p><a>') ?></p>
@@ -108,7 +108,7 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=7cdd9e10a175
   			Lorem ipsum dolor sit amet, ad ipsum melius sensibus vix, ut his tation luptatum conclusionemque, id quod tincidunt scriptorem nam. Wisi tamquam ea has. Pri ad copiosae assentior. Vis audiam eleifend intellegebat te, erant discere ei mel. Quem putent honestatis nec ea, eos minim mandamus in, sea ne oblique menandri. Vim an magna civibus periculis.</p>
   	</section>
   </main>
-  
+
 	<footer class="page-footer" role="contentinfo" aria-label="page footer">
 		<h2 class="block-text">Get out and enjoy!</h2>
 	</footer>
