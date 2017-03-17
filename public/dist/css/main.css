@@ -424,6 +424,7 @@ button,
 
 body {
   font-size: 1.6rem;
+  font-family: "Courier PS W01";
   background-color: #ffeb2b;
   background-image: url("/graphics/bg-raster.png");
   background-repeat: repeat;
@@ -431,6 +432,12 @@ body {
 
 img {
   width: 100%; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Acrom W00 ExtraBold"; }
 
 h1 {
   font-size: 12.6rem; }

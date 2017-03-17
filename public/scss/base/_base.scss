@@ -32,7 +32,8 @@ button,
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: $base-font-size;
+  font-family: $courier;
   background-color: $yellow;
   background-image: url('/graphics/bg-raster.png');
   background-repeat: repeat;
