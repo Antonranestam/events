@@ -33,18 +33,12 @@ button,
 
 body {
   font-size: 1.6rem;
+  background-color: $yellow;
+  background-image: url('/graphics/bg-raster.png');
+  background-repeat: repeat;
+  background-size: 100px;
 }
 
 img {
   width: 100%;
-}
-
-// Ta bort denna för mer seamless känsla alt. fixa
-.past,
-.future {
-  display: none;
-}
-
-.present {
-  display: block;
 }

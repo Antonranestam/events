@@ -1,1 +1,11 @@
+h1 {
+  font-size: $heading-one;
 
+  .event & {
+    font-size: $heading-two;
+  }
+}
+
+h2 {
+  font-size: $heading-two;
+}
