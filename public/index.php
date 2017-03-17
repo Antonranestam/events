@@ -24,7 +24,7 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
 
 <body>
 
-	<header class="site-header" role="banner" aria-label="header">
+	<header class="header" role="banner" aria-label="header">
     <svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 1150 189" style="enable-background:new 0 0 1150 189;" xml:space="preserve">
       <g id="logo">
@@ -52,7 +52,7 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
 				c-6.2,0-12.6,4.8-12.6,13.4s6.4,13.2,12.6,13.2c6.2,0,12.6-4.7,12.6-13.2S1068.2,93.1,1062,93.1z"/>
 		  </g>
     </svg>
-    <img class="site-header__bg" src="graphics/header.png" alt="header bg">
+    <img class="header__bg" src="graphics/header.png" alt="header bg">
 	</header>
 
   <main role="main">

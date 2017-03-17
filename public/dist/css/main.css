@@ -423,12 +423,12 @@ button,
   border: 0; }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Courier PS W01";
   background-color: #ffeb2b;
   background-image: url("/graphics/bg-raster.png");
   background-repeat: repeat;
-  background-size: 100px; }
+  background-size: 100px;
+  font-family: "Courier PS W01";
+  font-size: 1.6rem; }
 
 img {
   width: 100%; }
@@ -451,22 +451,21 @@ h2 {
 /* */
 /* No files to import found in components//**/
 /* */
-.site-header {
+.header {
   position: relative; }
 
-.site-header__bg {
-  object-fit: cover;
+.header__bg {
+  isolation: isolate;
   mix-blend-mode: darken;
-  isolation: isolate; }
+  object-fit: cover; }
 
 .logo {
-  width: 960px;
+  font-size: 12.6rem;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  color: yellow;
-  font-size: 12.6rem;
+  width: 960px;
   z-index: 10; }
   .logo rect {
     fill: #1c201f; }
@@ -475,8 +474,8 @@ h2 {
     fill: #ffeb2b; }
 
 main {
-  width: calc(100% - 20%);
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: calc(100% - 20%); }
 
 /* No files to import found in content//**/
 /* */

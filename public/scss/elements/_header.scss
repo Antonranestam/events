@@ -1,21 +1,20 @@
-.site-header {
+.header {
   position: relative;
 }
 
-.site-header__bg {
-  object-fit: cover;
-  mix-blend-mode: darken;
+.header__bg {
   isolation: isolate;
+  mix-blend-mode: darken;
+  object-fit: cover;
 }
 
 .logo {
-  width: 960px;
+  font-size: $heading-one;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  color: yellow;
-  font-size: $heading-one;
+  width: 960px;
   z-index: 10;
 
   rect {
