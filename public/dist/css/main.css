@@ -473,6 +473,23 @@ h2 {
   .logo path {
     fill: #ffeb2b; }
 
+.event__image {
+  position: relative;
+  mix-blend-mode: darken;
+  filter: grayscale(100%); }
+  .event__image img {
+    display: block; }
+  .event__image::after {
+    background: url("/graphics/halftone.svg") repeat;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-size: 5px; }
+
 main {
   margin: 0 auto;
   width: calc(100% - 20%); }

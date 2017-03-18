@@ -64,7 +64,7 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
   		<?php foreach ($rss->item as $item): ?>
   			<article class="event">
   				<figure class="event__image">
-  					<img src="/" alt="foo-cafe">
+  					<img src="images/test.jpg" alt="foo-cafe">
   				</figure>
 
           <div class="event__title">

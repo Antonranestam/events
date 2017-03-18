@@ -1,0 +1,21 @@
+.event__image {
+  position: relative;
+  mix-blend-mode: darken;
+  filter: grayscale(100%);
+
+  img {
+    display: block;
+  }
+
+  &::after {
+    background: url('/graphics/halftone.svg') repeat;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-size: 5px;
+  }
+}
