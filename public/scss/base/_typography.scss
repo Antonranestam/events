@@ -7,9 +7,11 @@ h4 {
 
 h1 {
   font-size: $heading-one;
+  margin: 0;
 
   .event & {
     font-size: $heading-two;
+    line-height: 7.2rem;
   }
 }
 

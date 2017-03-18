@@ -64,22 +64,23 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
   		<?php foreach ($rss->item as $item): ?>
   			<article class="event">
   				<figure class="event__image">
+            
+            <div class="event__details">
+              <time><?php echo strip_tags ($item->author, '<p><a>') ?></time>
+              <adress>Foo cafe</adress>
+            </div>
+
   					<img src="images/test.jpg" alt="foo-cafe">
   				</figure>
-
-          <div class="event__title">
-            <time datetime="2017-02-12 17:30"><?php echo strip_tags ($item->author, '<p><a>') ?></time>
-            <adress>Foo cafe</adress>
-          </div>
 
   				<?php if (isset($item->{'content:encoded'})): ?>
   					<div><?php echo $item->{'content:encoded'} ?></div>
   				<?php else: ?>
 
   					<div class="event__text">
+
               <h1>
-                <a href="<?php echo htmlSpecialChars($item->link) ?>"><?php echo htmlSpecialChars($item->title) ?></a>
-                <small><?php echo ($item->author) ?></small>
+                <?php echo htmlSpecialChars($item->title) ?>
               </h1>
 
   						<p><?php echo strip_tags ($item->description, '<p><a>') ?></p>
