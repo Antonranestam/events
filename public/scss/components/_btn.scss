@@ -1,7 +1,9 @@
 .btn {
   background: linear-gradient(to right, $black, rgba($black, .1));
-  padding: 33px 50px;
+  padding: 25px 50px;
   text-decoration: none;
   color: $white;
   font-size: $heading-four;
+  letter-spacing: 7px;
+  display: inline-block;
 }

@@ -64,9 +64,9 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
   		<?php foreach ($rss->item as $item): ?>
   			<article class="event">
   				<figure class="event__image">
-            
+
             <div class="event__details">
-              <time><?php echo strip_tags ($item->author, '<p><a>') ?></time>
+              <time><?php echo preg_replace("/[^0-9.\d]/", '', $item->author); ?></time>
               <adress>Foo cafe</adress>
             </div>
 

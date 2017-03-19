@@ -4,6 +4,11 @@
   font-size: 2.2rem;
   line-height: 3.4rem;
 
+  // Last child remove it
+  &:nth-child("last-child") {
+    display: none;
+  }
+
   // Every other child needs to be aligned left
   &:nth-child(2n) {
 
@@ -11,11 +16,6 @@
       order: 1;
       margin: 0 -10% 0 5rem;
     }
-  }
-
-  // Last child remove it
-  &:nth-last-child() {
-    display: none;
   }
 }
 
@@ -58,6 +58,10 @@
 
   time {
     font-size: $heading-one;
+    line-height: 12rem;
+    max-width: 600px;
+    word-wrap: break-word;
+    display: block;
   }
 
   adress {
