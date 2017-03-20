@@ -94,7 +94,8 @@ $rss = Feed::loadRss('http://fetchrss.com/rss/58c7000f8a93f8ff248b4567405327505.
   	</section>
 
   	<section class="about" role="complementary" aria-label="about">
-  		<h1>What is this?</h2>
+  		<h2>What is this?</h2>
+      <img src="graphics/hand.png" alt="hand">
   		<p>Lorem ipsum dolor sit amet, ad ipsum melius sensibus vix, ut his tation luptatum conclusionemque, id quod tincidunt scriptorem nam. Wisi tamquam ea has. Pri ad copiosae assentior. Vis audiam eleifend intellegebat te, erant discere ei mel. Quem putent honestatis nec ea, eos minim mandamus in, sea ne oblique menandri. Vim an magna civibus periculis. <br />
   			Lorem ipsum dolor sit amet, ad ipsum melius sensibus vix, ut his tation luptatum conclusionemque, id quod tincidunt scriptorem nam. Wisi tamquam ea has. Pri ad copiosae assentior. Vis audiam eleifend intellegebat te, erant discere ei mel. Quem putent honestatis nec ea, eos minim mandamus in, sea ne oblique menandri. Vim an magna civibus periculis.</p>
   	</section>
