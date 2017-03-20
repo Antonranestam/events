@@ -465,6 +465,9 @@ h2 {
     height: 15px;
     bottom: -25px; }
 
+p {
+  line-height: 2.6rem; }
+
 /* No files to import found in layout//**/
 /* */
 .btn {
@@ -479,7 +482,7 @@ h2 {
 
 .header {
   position: relative;
-  margin: 0 0 5rem; }
+  margin: -5rem 0 5rem; }
 
 .header__bg {
   isolation: isolate;
@@ -503,6 +506,15 @@ h2 {
 main {
   margin: 0 auto;
   width: calc(100% - 30%); }
+
+.about {
+  padding: 0 0 0 250px; }
+  .about img {
+    mix-blend-mode: darken;
+    position: absolute;
+    left: 0;
+    max-width: 700px;
+    margin-top: -200px; }
 
 .event {
   display: flex;
