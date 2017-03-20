@@ -7,18 +7,21 @@
   <meta name="description" content="Design, development & personal development events in Malmö.">
   <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/d75bfad4-909a-4759-987e-74a102f28057.css"/>
   <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="node_modules/magnific-popup/dist/magnific-popup.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
   <script src="dist/js/bundle.js"></script>
 
    <!--[if lt IE 9]>
      <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
    <![endif]-->
+
 </head>
 
 <?php
 
 require_once 'src/Feed.php';
-$rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4dde228bd1c83939a0fb42');
+$rss = Feed::loadRss('http://fetchrss.com/rss/58c7000f8a93f8ff248b4567405327505.xml');
 
 ?>
 
@@ -64,12 +67,6 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
   		<?php foreach ($rss->item as $item): ?>
   			<article class="event">
   				<figure class="event__image">
-
-            <div class="event__details">
-              <time><?php echo preg_replace("/[^0-9.\d]/", '', $item->author); ?></time>
-              <adress>Foo cafe</adress>
-            </div>
-
   					<img src="images/test.jpg" alt="foo-cafe">
   				</figure>
 
@@ -78,29 +75,22 @@ $rss = Feed::loadRss('https://feedroll.com/feedcombiner/feed.php?id=d2b4efe44c4d
   				<?php else: ?>
 
   					<div class="event__text">
+              <div class="event__details">
+                <adress>Moderna museet</adress>
+              </div>
+
+              <time><?php echo ($item->author); ?></time>
 
               <h1>
                 <?php echo htmlSpecialChars($item->title) ?>
               </h1>
 
   						<p><?php echo strip_tags ($item->description, '<p><a>') ?></p>
-  						<a href="#" class="btn" aria-label="Read more about Advanced Speakers Club link" title="Read more about Advanced Speakers Club">Read more</a>
+  						<a href="<?php echo htmlSpecialChars($item->link) ?>" class="btn" aria-label="Read more about Advanced Speakers Club link" title="Read more about Advanced Speakers Club">Read more</a>
   					</div>
   				<?php endif ?>
   			</article>
   		<?php endforeach ?>
-
-  		<button aria-label="Load more events" class="btn-black">
-  			Load more events
-  		</button>
-  	</section>
-
-  	<section class="slack" role="complementary" aria-label="slack info">
-  		<article class="slack__information">
-  			<h2>Get notified about events</h2>
-  			<p>Have your team notified about cool events that is taking place in Malmö directly in to your Slack.</p>
-  			<a href="#" class="btn-blue btn-blue--slack">Add to slack</a>
-  		</article>
   	</section>
 
   	<section class="about" role="complementary" aria-label="about">
