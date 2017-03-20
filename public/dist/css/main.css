@@ -437,17 +437,33 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Acrom W00 ExtraBold"; }
+  font-family: "Acrom W00 ExtraBold";
+  font-weight: normal; }
 
 h1 {
   font-size: 12.6rem;
   margin: 0; }
   .event h1 {
-    font-size: 6.6rem;
-    line-height: 7.2rem; }
+    font-size: 5.6rem;
+    line-height: 6.2rem;
+    clear: both; }
 
 h2 {
   font-size: 6.6rem; }
+
+.spec-title {
+  font-family: "Courier PS W01 Bold";
+  font-size: 3.2rem;
+  position: relative;
+  font-weight: normal; }
+  .spec-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: url("/graphics/lines.svg") no-repeat;
+    height: 15px;
+    bottom: -25px; }
 
 /* No files to import found in layout//**/
 /* */
@@ -458,10 +474,12 @@ h2 {
   color: #fff;
   font-size: 2.4rem;
   letter-spacing: 7px;
-  display: inline-block; }
+  display: inline-block;
+  box-shadow: -10px 10px 0px rgba(28, 32, 31, 0.2); }
 
 .header {
-  position: relative; }
+  position: relative;
+  margin: 0 0 5rem; }
 
 .header__bg {
   isolation: isolate;
@@ -484,30 +502,38 @@ h2 {
 
 main {
   margin: 0 auto;
-  width: calc(100% - 20%); }
+  width: calc(100% - 30%); }
 
 .event {
   display: flex;
   margin: 0 0 10rem;
   font-size: 2.2rem;
   line-height: 3.4rem; }
-  .event:nth-child("last-child") {
+  .event:nth-child(20) {
     display: none; }
   .event:nth-child(2n) .event__image {
     order: 1;
     margin: 0 -10% 0 5rem; }
+  .event:nth-child(2n) .event__details adress {
+    margin: 0 -200px 20px 0;
+    float: right;
+    width: 400px; }
+  .event time {
+    font-size: 2.4rem;
+    display: inline-block; }
 
 .event__image {
   position: relative;
   margin: 0 5rem 0 -10%;
   max-width: 100%;
-  height: 500px; }
+  height: 400px; }
   .event__image img {
     mix-blend-mode: darken;
     filter: grayscale(100%);
     display: block;
     object-fit: cover;
-    height: 100%; }
+    height: 100%;
+    opacity: .5; }
   .event__image::after {
     background: url("/graphics/halftone.svg") repeat;
     bottom: 0;
@@ -520,18 +546,19 @@ main {
     background-size: 5px; }
 
 .event__text {
-  width: 75%; }
+  width: 100%; }
 
 .event__details {
-  position: absolute;
-  color: #fff;
+  color: #1c201f;
   z-index: 10;
   font-family: "Acrom W00 ExtraBold"; }
-  .event__details time {
-    font-size: 12.6rem;
-    line-height: 12rem;
-    max-width: 600px;
-    word-wrap: break-word;
-    display: block; }
+  .event__details::after {
+    content: "";
+    display: table;
+    clear: both; }
   .event__details adress {
-    font-size: 6.6rem; }
+    font-size: 6.6rem;
+    line-height: 7rem;
+    width: 400px;
+    margin: 0 0 20px -150px;
+    float: left; }

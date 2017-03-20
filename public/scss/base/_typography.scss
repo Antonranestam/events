@@ -3,6 +3,7 @@ h2,
 h3,
 h4 {
   font-family: $acrom;
+  font-weight: normal;
 }
 
 h1 {
@@ -10,11 +11,29 @@ h1 {
   margin: 0;
 
   .event & {
-    font-size: $heading-two;
-    line-height: 7.2rem;
+    font-size: 5.6rem;
+    line-height: 6.2rem;
+    clear: both;
   }
 }
 
 h2 {
   font-size: $heading-two;
+}
+
+.spec-title {
+  font-family: $courier-bold;
+  font-size: 3.2rem;
+  position: relative;
+  font-weight: normal;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: url('/graphics/lines.svg') no-repeat;
+    height: 15px;
+    bottom: -25px;
+  }
 }
